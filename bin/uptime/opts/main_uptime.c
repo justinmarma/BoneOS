@@ -49,7 +49,7 @@ int main_uptime_opt_handler (char *cmd)
     time_since_start.second =(uint8_t) (curr.second - start_time.second);
     if (num_opts == 1)
     {
-        printk ("%x:%x", time_since_start.minute, time_since_start.second);
+        printk ("%x:%x\n", time_since_start.minute, time_since_start.second);
         return STATUS_OK;
     }
     else if (num_opts > 1)
